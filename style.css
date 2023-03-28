@@ -5,3 +5,31 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.scheme-container {
+  display: grid;
+  width: 550px;
+  height: 550px;
+  border: 1px solid black;
+}
+
+.color {
+  background: red;
+}
+.color2 {
+  background: rgb(84, 144, 179);
+}
+.color3 {
+  background: rgb(56, 177, 52);
+}
+.color4 {
+  background: rgb(214, 138, 51);
+}
+.color5 {
+  background: rgb(238, 255, 0);
+}
