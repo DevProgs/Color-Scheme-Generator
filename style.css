@@ -11,10 +11,18 @@ body {
   justify-content: center;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 550px;
+  border: 1px solid black;
+}
+
 .scheme-container {
   display: grid;
   grid-template-columns: repeat(6, 110px);
   width: 550px;
-  height: 550px;
-  border: 1px solid black;
+  height: 414px;
 }
