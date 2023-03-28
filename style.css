@@ -13,6 +13,7 @@ body {
 
 .scheme-container {
   display: grid;
+  grid-template-columns: repeat(6, 110px);
   width: 550px;
   height: 550px;
   border: 1px solid black;
@@ -21,6 +22,7 @@ body {
 .color {
   background: red;
 }
+
 .color2 {
   background: rgb(84, 144, 179);
 }
