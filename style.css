@@ -26,7 +26,6 @@ body {
 .test {
   display: flex;
   align-items: center;
-  border: 1px solid yellow;
   padding: 1.5625em .75em;
 }
 
