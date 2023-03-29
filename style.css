@@ -30,6 +30,11 @@ body {
   padding: 1.5625em .75em;
 }
 
+.color-picker {
+  width: 60px;
+  height: 40px;
+}
+
 .btn {
   margin-left: auto;
   background: #3D4B60;
