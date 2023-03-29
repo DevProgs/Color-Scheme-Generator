@@ -11,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background: #1F2937;
 }
 
 
@@ -19,8 +20,23 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 550px;
-  height: 550px;
   border: 1px solid black;
+}
+
+.test {
+  display: flex;
+  align-items: center;
+  border: 1px solid yellow;
+  padding: 1.5625em .75em;
+}
+
+.btn {
+  margin-left: auto;
+  background: #3D4B60;
+  color: white;
+  padding: 1em;
+  border-radius: 5px;
+  border: none; 
 }
 
 .scheme-container {
