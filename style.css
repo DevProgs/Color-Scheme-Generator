@@ -9,12 +9,15 @@
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
+
 
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
   width: 550px;
   height: 550px;
   border: 1px solid black;
