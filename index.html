@@ -3,19 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Color Scheme Generator</title>
   </head>
   <body>
-    <div class="container">
-      <div class="test">
-        <input type="color" value="#ff00ff" class="color-picker">
+    <div class="app-container">
+      <div class="top-container">
+        <input type="color" value="#ff00ff" class="color-picker" />
+        <select name="selectTest" class="selector">
+          <option value="1">1</option>
+          <option value="2">S</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
         <button class="btn">Get Color Scheme</button>
       </div>
-      <div class="scheme-container">
-      </div>
+      <div class="scheme-container"></div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
-

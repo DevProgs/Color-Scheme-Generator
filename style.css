@@ -15,7 +15,7 @@ body {
 }
 
 
-.container {
+.app-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -23,10 +23,12 @@ body {
   border: 1px solid black;
 }
 
-.test {
+.top-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 1.5625em .75em;
+  gap: 12px;
 }
 
 .color-picker {
@@ -34,8 +36,17 @@ body {
   height: 40px;
 }
 
+.selector {
+background: #1F293A;
+border: 1px solid #D1D5DB;
+border-radius: 6px;
+color: white;
+flex-grow: 1;
+padding: .75em;
+}
+
 .btn {
-  margin-left: auto;
+  /* margin-left: auto; */
   background: #3D4B60;
   color: white;
   padding: 1em;
