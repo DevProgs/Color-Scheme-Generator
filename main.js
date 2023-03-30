@@ -16,11 +16,10 @@ const getColorScheme = () => {
     .then((data) =>
       data.colors.forEach(
         (color) => (
-          (schemeHTML += `<div style="background: ${color.hex.value}"></div>`, hexHTML += `<div class="hex-value">${color.hex.value}</div>`),
-          (hexValueContainer.innerHTML = hexHTML),
-          (schemeContainer.innerHTML = schemeHTML)
+          schemeHTML += `<div style="background: ${color.hex.value}"></div>`, hexHTML += `<div class="hex-value">${color.hex.value}</div>`,
+          hexValueContainer.innerHTML = hexHTML,
+          schemeContainer.innerHTML = schemeHTML
         ),
-        (schemeHTML = '')
       )
     );
 };
