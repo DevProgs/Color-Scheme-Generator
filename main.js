@@ -9,7 +9,7 @@ const getColorScheme = () => {
   fetch(
     `https://www.thecolorapi.com/scheme?hex=${selectedColor.value.substring(
       1
-    )}&mode=analogic&count=5`
+    )}&mode=${selectedMode.value}&count=5`
   )
     .then((res) => res.json())
     .then((data) =>
@@ -28,6 +28,6 @@ btn.addEventListener('click', getColorScheme);
 getColorScheme();
 
 
-fetch('https://www.thecolorapi.com/scheme?hex=ff00ff&mode=analogic&count=5')
-  .then((res) => res.json())
-  .then((data) => console.log(data._links.schemes));
+// fetch('https://www.thecolorapi.com/scheme?hex=ff00ff&mode=analogic&count=5')
+//   .then((res) => res.json())
+//   .then((data) => console.log(data._links.schemes));
