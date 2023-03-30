@@ -46,7 +46,6 @@ padding: .75em;
 }
 
 .btn {
-  /* margin-left: auto; */
   background: #3D4B60;
   color: white;
   padding: 1em;
@@ -56,7 +55,18 @@ padding: .75em;
 
 .scheme-container {
   display: grid;
-  grid-template-columns: repeat(6, 110px);
-  width: 550px;
+  grid-template-columns: repeat(5, 110px);
   height: 414px;
+}
+
+.hex-value--container {
+  display: grid;
+  grid-template-columns: repeat(5, 110px);
+  color: #D5D4D8;
+  text-align: center;
+}
+
+.hex-value {
+  font-size: .85rem;
+  padding: 15px 0;
 }
