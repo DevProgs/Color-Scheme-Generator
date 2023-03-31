@@ -55,10 +55,6 @@ flex-grow: 1;
 padding: .75em;
 }
 
-option {
-  padding: 15px;
-}
-
 .btn {
   background: #3D4B60;
   padding: 1em;
