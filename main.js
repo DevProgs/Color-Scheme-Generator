@@ -6,10 +6,6 @@ const hexValueContainer = document.querySelector('.hex-value--container')
 
 document.addEventListener('click', (e) => {
   navigator.clipboard.writeText(e.target.dataset.color);
-  if (e.target.dataset.color) {
-    e.target.style.color = "white"
-    e.target.innerHTML = "Copied!"
-  } 
 })
 
 const getColorScheme = () => {
@@ -23,8 +19,8 @@ const getColorScheme = () => {
     .then((res) => res.json())
     .then((data) =>
       data.colors.forEach(
-        (color) => (
-          schemeHTML += `<div class="color" data-color=${color.hex.value} style="background: ${color.hex.value}"></div>`, 
+        (color, index) => (
+          schemeHTML += `<div class="color" data-color=${color.hex.value} data-index=${index} style="background: ${color.hex.value}"></div>`, 
           hexHTML += `<div class="hex-value">${color.hex.value}</div>`,
           hexValueContainer.innerHTML = hexHTML,
           schemeContainer.innerHTML = schemeHTML
@@ -34,7 +30,7 @@ const getColorScheme = () => {
   };
   
   btn.addEventListener('click', getColorScheme);
-
-  getColorScheme();
+  
+getColorScheme();
 
 
