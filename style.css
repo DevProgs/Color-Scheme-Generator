@@ -62,6 +62,11 @@ padding: .75em;
   border: none; 
 }
 
+.btn:hover,
+.btn:focus {
+  background: #657b9c;
+}
+
 .scheme-container,
 .hex-value--container {
   display: grid;
@@ -87,4 +92,12 @@ padding: .75em;
   justify-content: center;
   align-items: center;
   cursor: pointer
+}
+
+
+@media (max-width: 558px) {
+  .scheme-container,
+  .hex-value--container {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
